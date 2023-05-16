@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="HOME/PICTURE/logo.jpeg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="footer.css">
+  <title>Payment | Braceletique</title>
+  <link rel="stylesheet" href="nav.css">
+  <script defer src="payment/paymentItem.js"></script>
+  <link rel="stylesheet" href="payment/payment2.css">
+  <script defer src="HOME/smallNav.js"></script>
+</head>
+
+<body>
+  <nav>
+
+    <div class="logo-title">
+      BRACELETIQUE
+    </div>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <div id="dropdown">
+        <li><a href="" class="dropbutton">PRODUCT</a></li>
+        <div id="dropdowncontent">
+          <a href="bracelet.html">Bracelet</a>
+          <a href="necklace.html">Necklace</a>
+          <a href="newcollection.html">New Collection</a>
+          <a href="onlineEx.html">Onilne Exclusive</a>
+        </div>
+      </div>
+      <li><a href="aboutUs.html">ABOUT US</a></li>
+      <li><a href="FAQs.html">FAQ</a></li>
+
+    </ul>
+
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+
+  </nav>
+
+
+  <div class="loading">
+    <div class="box-loading">
+      <span style="--a:1">L</span>
+      <span style="--a:2">o</span>
+      <span style="--a:3">a</span>
+      <span style="--a:4">d</span>
+      <span style="--a:5">i</span>
+      <span style="--a:6">n</span>
+      <span style="--a:7">g</span>
+      <span style="--a:8">.</span>
+      <span style="--a:9">.</span>
+      <span style="--a:10">.</span>
+    </div>
+  </div>
+
+  
+  <section class="flowBox">
+    <div class="flowOrder">
+      <div class="status"> &#x2713;</div>
+      <div class="text">
+        <h5>Login</h5>
+      </div>
+    </div>
+    <div class="line">
+      <hr>
+    </div>
+    <div class="flowOrder">
+      <div class="status"> &#x2713;</div>
+      <div class="text">
+        <h5>Shipment</h5>
+      </div>
+    </div>
+    <div class="line">
+      <hr>
+    </div>
+    <div class="flowOrder">
+      <div class="status">3</div>
+      <div class="text">
+        <h5>Payment</h5>
+      </div>
+    </div>
+    <div class="line">
+      <hr>
+    </div>
+    <div class="flowOrder">
+      <div class="status">4</div>
+      <div class="text">
+        <h5>Completed</h5>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <div class="payment-section">
+    <section class="up-payment">
+      <div class="details">
+        <h2>Your shopping bag</h2>
+
+        <div class="finalProduct"></div>
+
+        <div class="total-align">
+          <div class="subtotal">
+            <h5>Subtotal</h5>
+            <h5 id="subtotal-value">RM 0</h5>
+          </div>
+          <div class="shipping">
+            <h5>Shipping</h5>
+            <h5>Free</h5>
+          </div>
+          <div class="total">
+            <h5>Your Price</h5>
+            <h5 id="total-value">RM 0</h5>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="down-payment">
+
+      <div class="modal">
+        <form class="form" action="completed.html">
+          <h2>Payment Method</h2>
+          <div class="payment--options">
+
+            <button id="tng">
+              <img src="payment/tnglogo.png" alt="tng" ></button>
+            <button id="grab" ><img
+                src="payment/grabpay.png"></button>
+            <button id="paypal" name="paypal"  type="button">
+              <img src="payment/Paypal-logo.png">
+            </button>
+          </div>
+          <div class="separator">
+            <hr class="line">
+            <p>or pay using credit card</p>
+            <hr class="line">
+          </div>
+          <div class="credit-card-info--form">
+            <div class="input_container">
+              <label for="password_field" class="input_label">Card holder full name</label>
+              <input id="password_field" class="input_field" type="text" name="input-name" title="Inpit title"
+                placeholder="Enter your full name">
+            </div>
+            <div class="input_container">
+              <label for="password_field" class="input_label">Card Number</label>
+              <input id="password_field" class="input_field" type="number" name="input-name" title="Inpit title"
+                placeholder="0000 0000 0000 0000" pattern="[0-9]{13,16}" required>
+            </div>
+            <div class="input_container">
+              <label for="password_field" class="input_label">Expiry Date / CVV</label>
+              <div class="split">
+                <input id="password_field" class="input_field" type="text" name="input-name" title="Expiry Date"
+                  placeholder="01/23">
+                <input id="password_field" class="input_field" type="number" name="cvv" title="CVV" placeholder="CVV"
+                  maxlength="3" required>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="purchase--btn">Checkout</button>
+        </form>
+      </div>
+
+    </section>
+
+
+  </div>
+
+
+
+
+
+
+
+
+  <!---------------Footer---------->
+  <hr>
+ <div class="footer">
+  <div class="navbar" id="myNavbar">
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li> <a href="jewelrycare.html">Jewelry Care</a></li> 
+    <li><a href="aboutus.html">About Us</a></li>
+    <li> <a href="feedback.html">Feedback</a></li>   
+    </ul>
+  </div> 
+  
+  <div class="navbar2" id="myNavbar2">
+        <b>Customer Services</b><br><br>
+        Need help?<br>
+        Send us an e-mail to:<br> 
+        customercare@braceletique.com<br>
+        For quick customer service give us a call on:<br>
+        (+60) 111 604 471
+    
+  </div>
+  <div class="footer-col-4 ">
+    <h4>Follow us</h4><br>
+    <div class="social-links">
+        <a href="https://www.facebook.com/SWAROVSKI.global/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/swarovski"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/swarovski/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@Swarovski"><i class="fab fa-youtube"></i></a>
+    </div>
+</div>
+  
+</div>
+<hr>
+<p class="copyright "><i class="far fa-copyright "></i> 2023 BRACELETIQUE. All Rights Reserved</p>
+<!-- footer -->
+
+
+
+</body>
+
+</html>

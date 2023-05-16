@@ -1,0 +1,70 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --main-color: #F2EFE9;
+  --main-font: clamp(.8rem, 5vw, 1.5rem);
+  --second-font: clamp(.5rem, 2vw, 1.2rem);
+  --third-font: clamp(.5rem, 2vw, 1rem);
+  --title-font: clamp(.5rem, 2.5vw, 1.5rem);
+}
+
+body{
+  user-select: none;
+  overflow-x: hidden;
+}
+.background img {
+  width: 100vw;
+  height: 70vh;
+  object-fit: cover;
+  position: relative;
+}
+
+.background {
+  position: relative;
+  background-color: #F2EFE9 ;
+}
+
+.background2 img {
+  width: 80%; /*100vw*/
+  height: 90%; /*110vh*/
+  position:relative; 
+  padding-left: 20%;
+  padding-bottom: 5%;
+  padding-top: 1%;
+}
+
+
+.heading {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 15px;
+}
+
+.container{
+    position: relative;
+    top: 155%; /*950px*/
+    background-color: #F2EFE9;
+}
+
+
+.container ul{
+  font-size: 12px;
+  padding-left: 50px;
+  padding-right: 50px;
+  
+}
+
+.container p{
+  font-size: 10px;
+  padding-bottom: 5%;
+}
+  
+  
+
+  
+  

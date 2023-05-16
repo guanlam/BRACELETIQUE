@@ -1,0 +1,91 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --main-color: #F2EFE9;
+    --main-font : clamp(.8rem, 5vw, 1.5rem);
+    --second-font : clamp(.5rem, 2vw, 1.2rem);
+    --third-font : clamp(.5rem, 2vw, 1rem);
+    --title-font : clamp(.5rem, 2.5vw, 1.5rem);
+
+}
+
+/*container*/
+.container{
+    margin-top: 8%;
+    
+    padding: 0 50px;
+    padding-bottom: 8%;
+}
+
+.container #title{
+    text-align: center;
+    font-size: clamp(1.4rem, 2.4vw, 3rem);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:bold;
+    margin-top: 2%;
+}
+
+.container p{
+    text-align: center;
+    font-size: clamp(1.1rem, 2vw, 2rem);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 2%;
+}
+
+.expand{
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-top: 2%;
+    font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: clamp(.9rem, 1.7vw, 1.1rem);
+}
+
+.active, .expand:hover{
+    color: #000000;
+    background-color: #F2EFE9;
+
+}
+
+.expand:after{
+    content: '\002B';
+    color: black;
+    font-weight: bolder;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after{
+    content: "\2212";
+}
+
+.content{
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.content p{
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    word-spacing: 5px;
+    font-size: clamp(.7rem, 1.5vw, 1rem);
+    text-align: justify;
+}
+
+.content a{
+    text-decoration: none;
+    color: #000000;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.content #subtitle{
+    font-weight: bold;
+}

@@ -1,0 +1,193 @@
+                 :root {
+                    --black: #000000;
+                    --white: #ffffff;
+                    --main-color: #F2EFE9;
+                    --main-font: clamp(.8rem, 5vw, 1.5rem);
+                    --second-font: clamp(.5rem, 2vw, 1.2rem);
+                    --third-font: clamp(.5rem, 2vw, 1rem);
+                    --title-font: clamp(.5rem, 2.5vw, 1.5rem);
+                }
+                
+                .background img {
+                    width: 100vw;
+                    height: 70vh;
+                    object-fit: cover;
+                    position: relative;
+                }
+                
+                .background {
+                    position: relative;
+                    background-color: var(--main-color);
+                }
+                
+                .text {
+                    position: absolute;
+                    top: 63%;
+                    left: 10%;
+                    right: 20%;
+                    color: rgb(51, 44, 44);
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-size: clamp(.4rem, 2vw, 1.2rem);
+                }
+                
+                .background {
+                    position: relative;
+                }
+                
+                .heading {
+                    width: 90%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    text-align: center;
+                    margin: 20px auto;
+                }
+                
+                .heading h1 {
+                    font-size: 50px;
+                    color: #000;
+                    margin-bottom: 25px;
+                    position: relative;
+                }
+                
+                .heading h1::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 4px;
+                    display: block;
+                    margin: 0 auto;
+                    background-color: #666;
+                }
+                
+                .heading p {
+                    font-size: 18px;
+                    color: #666;
+                    margin-bottom: 35px;
+                }
+                
+                .container {
+                    width: 90%;
+                    margin: 0 auto;
+                    padding: 10px 20px;
+                    margin-bottom: 50px;
+                }
+                
+                .about {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                }
+                
+                .about-img {
+                    flex: 1;
+                    margin-right: 40px;
+                    overflow: hidden;
+                }
+                
+                .about-img img {
+                    max-width: 100%;
+                    height: auto;
+                    display: block;
+                    transition: 0.5% ease;
+                }
+                
+                .about-img:hover img {
+                    transform: scale(1.2);
+                }
+                
+                .about-content {
+                    flex: 1;
+                }
+                
+                .about-content h2 {
+                    font-size: 23px;
+                    margin-bottom: 15px;
+                    color: #333;
+                }
+                
+                .about-content p {
+                    font-size: 18px;
+                    line-height: 1.5;
+                    color: #666;
+                }
+                
+                .about-content2 {
+                    flex: 0.3;
+                    text-align: justify;
+                    margin-right: auto;
+                    width: 100%;
+                }
+                
+                .about-content2 h2 {
+                    font-size: 23px;
+                    margin-bottom: 15px;
+                    color: #333;
+                    margin-top: 20px;
+                }
+                
+                .about-content2 p {
+                    font-size: 18px;
+                    line-height: 1.5;
+                    color: #666;
+                    margin-top: 20px;
+                }
+                
+                .explore {
+                    text-align: center;
+                }
+                
+                .explore #show-more {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    color: #000;
+                    font-size: 19px;
+                    text-decoration: none;
+                    border-radius: 25px;
+                    margin-top: 15px;
+                    transition: 0.3s ease;
+                    border: 2px solid #000;
+                    margin-bottom: 70px;
+                }
+                
+                .explore #show-more:hover {
+                    background-color: #000;
+                    color: #F2EFE9
+                }
+                
+                .more {
+                    display: none;
+                }
+                
+                @media screen and(max-width: 768px) {
+                    .heading {
+                        padding: 0px 20px;
+                    }
+                    .heading h1 {
+                        font-size: 36px;
+                    }
+                    .heading p {
+                        font-size: 17px;
+                        margin-bottom: 0px;
+                    }
+                    .container {
+                        padding: 0px;
+                    }
+                    .about {
+                        padding: 20px;
+                        flex-direction: column;
+                    }
+                    .about-img {
+                        margin-right: 0px;
+                        margin-bottom: 20px;
+                    }
+                    .about-content p {
+                        padding: 0px;
+                        font-size: 16px;
+                    }
+                    .explore-more {
+                        font-size: 16px;
+                    }
+                }

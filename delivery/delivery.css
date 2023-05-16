@@ -1,0 +1,175 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --main-color: #F2EFE9;
+    --main-font : clamp(.8rem, 5vw, 1.5rem);
+    --second-font : clamp(.5rem, 2vw, 1.2rem);
+    --third-font : clamp(.5rem, 2vw, 1rem);
+    --title-font : clamp(.5rem, 2.5vw, 1.5rem);
+
+}
+
+
+
+body{
+    background-color: #f5f1ea;
+}
+
+.model{
+    margin: auto;
+    background-color:#f5f1ea;
+    padding: 5% 15% 20%;
+    width: 80%; /*600px */
+
+}
+
+.model .container{
+    padding: 15px;
+    background-color: white;
+    text-align: left;
+    font-size: var(--third-font);
+
+}
+
+
+#ch{
+    display:none;
+}
+
+#ch:checked ~ .content2{
+    display: block;
+}
+
+#ch:checked ~label{
+    display: none;
+}
+
+label{
+    display: inline-block;
+    cursor: pointer;
+    padding: 3px 13px;
+    border-radius: 3px;
+    margin-top: 12px;
+}
+
+.content2{
+    display:none;
+    
+}
+
+.card{
+    margin: auto;
+    background-color:#f5f1ea;
+    padding: 10% 15% 10%;
+    width:80%;
+    padding-bottom: 2%;
+}
+
+.card .cont{
+    padding: 15px;
+    background-color: white;
+    text-align: left;
+    font-size: var(--third-font);
+    margin-top: -55%;
+}
+
+
+.user{
+    border: 1px solid black;
+    width: clamp(10px, 30vw ,280px);
+    height: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+    font-size: clamp(0.8rem, 1.2vw, 2rem);
+}
+
+
+::placeholder {
+    font-size: var(--third-font);
+}
+
+.continuebtn{
+    width: clamp(10px, 30vw ,280px);
+    height: 30px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.continuebtn:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .3
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+input.user:focus:valid{
+   background: rgb(237, 251, 237);
+}
+
+input.user:focus:invalid{
+   background: rgb(252, 252, 252);
+}
+
+.footer,.copyright{
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+/* status gl */
+  /* !!!!!!!!!!! */
+  section.flowBox{
+    margin: calc( 6rem + 5%) auto 0 ;
+    display: flex;
+    width: 60%;
+    align-items: center;
+    
+    justify-content: center;
+  }
+  
+  .flowOrder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 15%;
+    /* background-color: aquamarine; */
+  }
+  
+  .flowOrder .status{
+    background-color: black;
+    color: white;
+    padding: .5rem .8rem;
+    border-radius: 50%;
+    margin-bottom: .5rem;
+  }
+  .flowOrder:nth-child(7) .status,.flowOrder:nth-child(5) .status {
+      background-color: var(--main-color);
+      color: black;
+      border: 1px solid;
+  }
+  
+  
+  .line{
+    
+    width: 100%;
+    
+  }
+  /* !!!!!!!!! */

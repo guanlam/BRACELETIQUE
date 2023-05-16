@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="HOME/PICTURE/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="Register/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="footer.css">
+    <script defer src="Register/register.js"></script>
+    <script defer src="Register/togglePassword.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <title>Register | Braceletique</title>
+    <script defer src="HOME/smallNav.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo-title">
+            BRACELETIQUE
+        </div>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <div id="dropdown">
+            <li><a href="#" class="dropbutton">PRODUCT</a></li>
+            <div id="dropdowncontent">
+              <a href="bracelet.html">Bracelet</a>
+              <a href="necklace.html">Necklace</a>
+              <a href="newcollection.html">New Collection</a>
+              <a href="onlineEx.html">Onilne Exclusive</a>
+            </div>
+          </div>
+            <li><a href="aboutUs.html">ABOUT US</a></li>
+            <li><a href="FAQs.html">FAQ</a></li>
+            <li><a href="login.html" id="login">Login</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+    </nav>
+
+    <div id="login" class="model">
+      <form name="login" id="login" action="index.html"  method="get">
+          <div class="container">
+            <h2>Join the BRACELETIQUE Club</h2>
+            <br/>
+            <div id="sub">
+            <h4>Enjoy Free Shipping on every purchase on braceletique website</h4>
+            <div id="details">
+                &#10003;Stay on top of trends and new collection drops<br/>
+                &#10003;Benefit from exclusive access to pre-sale<br/>
+                &#10003;Faster checkout<br/><br/>
+            </div>
+            </div>
+            <div id="content">
+            <input type="email" placeholder="Email*" name="email" id="username" class="user" required>
+            <p><span id="display1" style ="color: rgb(233, 77, 77);">  </span></p>
+            <br/><br/>
+            <input type="password" name="password" id="password" placeholder="Set a password*" class="user" required>
+            <i class="bi bi-eye-slash" id="togglePassword"></i>
+            <p><span id="display2" style ="color: rgb(235, 77, 77);">  </span></p>
+            <br/><br/>
+            <div id="bottom">
+              <label class="newsletter">
+                <p><input type="checkbox" checked="checked" name="remember" id="cb1"
+                style="margin-bottom:15px"> Yes, I would like to subscribe to the Braceletique Club newsletter.</p>
+              </label>
+        
+              <p id="TnC">By clicking the "Join the club" button I agree to join the Braceletique Club and I confirm I have read and accepted the General Terms and Conditions and Privacy Policy.</p>
+        
+              <br/>
+              <div class="clearfix">
+                <button onclick="addNewuser()" class="signupbtn" type="button"> Join the club</button>
+              </div>
+              <br/>
+              <p id="last">Already a Braceletique Club member? <a href="login.html">Login here</a> </p>
+            </div>
+          </div>
+          </div>
+        </form>
+      </div>
+
+      <!---------------Footer---------->
+      <hr>
+ <div class="footer">
+  <div class="navbar" id="myNavbar">
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li> <a href="jewelrycare.html">Jewelry Care</a></li> 
+    <li><a href="aboutus.html">About Us</a></li>
+    <li> <a href="feedback.html">Feedback</a></li>      
+    </ul>
+  </div> 
+  
+  <div class="navbar2" id="myNavbar2">
+        <b>Customer Services</b><br><br>
+        Need help?<br>
+        Send us an e-mail to:<br> 
+        customercare@braceletique.com<br>
+        For quick customer service give us a call on:<br>
+        (+60) 111 604 471
+    
+  </div>
+  <div class="footer-col-4 ">
+    <h4>Follow us</h4><br>
+    <div class="social-links">
+        <a href="https://www.facebook.com/SWAROVSKI.global/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/swarovski"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/swarovski/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@Swarovski"><i class="fab fa-youtube"></i></a>
+    </div>
+</div>
+  
+</div>
+<hr>
+<p class="copyright "><i class="far fa-copyright "></i> 2023 BRACELETIQUE. All Rights Reserved</p>
+<!-- footer -->
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font-family import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,400;0,500;0,700;1,500&family=Roboto:wght@500&display=swap"
+    rel="stylesheet">
+    <link rel="icon" href="HOME/PICTURE/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="PRODUCT/necklace.css">
+    <link rel="stylesheet" href="footer.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="delivery/delivery.css"/>
+    <title>Delivery | Braceletique</title>
+    <script defer src="PRODUCT/searchFilter.js"></script>
+    <script defer src="PRODUCT/AddToCart/necklace_addtocart.js"></script>
+    <script defer src="HOME/smallNav.js"></script>
+    
+</head>
+<body>
+    <div class="loading">
+      <div class="box-loading">
+        <span style="--a:1">L</span>
+        <span style="--a:2">o</span>
+        <span style="--a:3">a</span>
+        <span style="--a:4">d</span>
+        <span style="--a:5">i</span>
+        <span style="--a:6">n</span>
+        <span style="--a:7">g</span>
+        <span style="--a:8">.</span>
+        <span style="--a:9">.</span>
+        <span style="--a:10">.</span>
+      </div>
+    </div>
+    <nav>
+          <div class="logo-title">
+            BRACELETIQUE
+          </div>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <div id="dropdown">
+            <li><a href="#" class="dropbutton">PRODUCT</a></li>
+              <div id="dropdowncontent">
+                <a href="bracelet.html">Bracelet</a>
+                <a href="necklace.html">Necklace</a>
+                <a href="newcollection.html">New Collection</a>
+                <a href="onlineEx.html">Onilne Exclusive</a>
+              </div>
+            </div>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="FAQs.html">FAQ</a></li>
+          </ul>
+          <div class="cart">
+            <a href="addtocart.html">
+              <img src="icon-add-to-cart.png" alt="">
+              <div class="quantity" id="quantity-cart">0</div>
+            </a>
+          </div>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+    </nav>
+
+
+    <section class="flowBox">
+      <div class="flowOrder">
+        <div class="status"> &#x2713;</div>
+        <div class="text">
+          <h5>Login</h5>
+        </div>
+      </div>
+      <div class="line">
+        <hr>
+      </div>
+      <div class="flowOrder">
+        <div class="status"> 2</div>
+        <div class="text">
+          <h5>Shipment</h5>
+        </div>
+      </div>
+      <div class="line">
+        <hr>
+      </div>
+      <div class="flowOrder">
+        <div class="status">3</div>
+        <div class="text">
+          <h5>Payment</h5>
+        </div>
+      </div>
+      <div class="line">
+        <hr>
+      </div>
+      <div class="flowOrder">
+        <div class="status">4</div>
+        <div class="text">
+          <h5>Completed</h5>
+        </div>
+      </div>
+    </section>
+
+
+
+    <div class="model">
+        <div class="container">
+          <b>Delivery option</b>
+          <br>
+          <br>
+          Carbon-neutral shipping & returns on all orders
+          <br>
+          <br>
+        <div class="content1">
+          <input id="ch" type="checkbox">
+          <input type="radio"  name="select" id="delivery" value="C" checked /> Carbon-neutral standard delivery: Free
+          <p>Orders placed from Monday to Friday by 10:00 AM SGT will be<br>
+           processed and shipped the same business day...</p>
+          <div class="content2">
+          <p>Standard delivery time: 2-7 business days
+          </p><br>
+
+          <p>Klang Valley: 2-3 business days<br>
+             Peninsular: 3-5 business days<br>
+            Sabah: 5-7 business days<br>
+            Sarawak: 4-6 business days<br>
+          </p><br>
+        
+          <p>Standard shipping cost: MYR 20<br>
+          Free standard shipping over: MYR 300<br>
+          </p><br>
+
+          <p>Orders placed on weekends and national holidays 
+            will be processed and shipped two business days later.<br>
+          </p>
+          <label for="ch">Show less</label>
+          </div>
+        <label for="ch">Read More</label>
+        <br>
+        <input type="radio"  name="select" id="click" value="L" /> Click & Collect (Store Pickup): Free
+        </div>
+        </div>
+      </div>
+
+     <form action="payment2.html">
+      <div class="card">
+        <div class="cont">
+          <b>Shipping Address</b>
+          <br><br><br>
+          Salutation
+          <br><br>
+          <input type="radio"  name="gender" id="male" value="M"/> Mr. &nbsp;
+          <input type="radio"  name="gender" id="female" value="F" /> Mrs/Ms.
+          <br><br>
+        <div class="cont1">
+          <input type="text" placeholder="First Name *" name="Fname" id="username" class="user" required>
+          <br/><br/>
+          <input type="text" placeholder="Last Name *" name="Lname" id="username" class="user" required>
+          <br/><br/>
+          <input type="text" placeholder="Telephone *" name="pnum" id="phonenumber" class="user" required>
+          <br/><br/>
+          <input type="text" placeholder="Street and street number *" name="street" id="streetnumber" class="user" required>
+          <br/><br/>
+          <input type="text" placeholder="Address line 2 " name="street" id="streetnumber" class="user" required>
+          <br/><br/>
+          <input type="text" list="State" placeholder="Please select a state *" name="state" id="state" class="user" required>
+            <datalist id="State">
+              <option value="Johor" > 
+              <option value="Kedah" >
+              <option value="Kelantan" > 
+              <option value="Kuala Lumpur">
+              <option value="Labuan">
+              <option value="Melaka">
+              <option value="Negeri Sembilan">
+              <option value="Pahang">
+              <option value="Penang">
+              <option value="Perlis">
+              <option value="Sabah">
+              <option value="Sarawak">
+              <option value="Selangor">
+              <option value="Terengganu">
+              <option value="Wilayah Persekutuan Putrajaya">
+            </datalist>
+          <br/><br/>
+          <input type="text" placeholder="City *" name="city" id="city" class="user" required>
+          <br/><br/>
+          <input type="text" placeholder="Zip *" name="zip" id="zipcode" class="user" required>
+          <br/><br/>
+        <div class="clearfix">
+          <a href="payment2.html"><button onclick="movePayment()" class="continuebtn" type="submit">Continue</button></a>
+        </div>
+        <br>
+        <p>Required fields*</p>
+        </div>
+      </div>
+      </div>
+    </form>
+
+      <hr>
+      <div class="footer">
+        <div class="navbar" id="myNavbar">
+          <ul>
+          <li><a href="index.html">Home</a></li>
+          <li> <a href="jewelrycare.html">Jewelry Care</a></li> 
+          <li><a href="aboutus.html">About Us</a></li>
+          <li> <a href="feedback.html">Feedback</a></li>     
+            
+        </ul>
+        </div> 
+        
+        <div class="navbar2" id="myNavbar2">
+              <b>Customer Services</b><br><br>
+              Need help?<br>
+              Send us an e-mail to:<br> 
+              customercare@braceletique.com<br>
+              For quick customer service give us a call on:<br>
+              (+60) 111 604 471
+          
+        </div>
+        
+        <div class="footer-col-4 ">
+          <h4>Follow us</h4><br>
+          <div class="social-links">
+              <a href="https://www.facebook.com/SWAROVSKI.global/"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/swarovski"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/swarovski/"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/@Swarovski"><i class="fab fa-youtube"></i></a>
+          </div>
+      </div>
+        
+    </div>
+    <hr>
+    <p class="copyright"><i class="far fa-copyright"></i> 2023 BRACELETIQUE. All Rights Reserved</p>
+</body>
+</html>

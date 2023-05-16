@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <title>Feedback | Braceletique</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="icon" href="HOME/PICTURE/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="feedback/feedback.css">
+    <script defer src="feedback/feedback.js"></script>
+    <script defer src="HOME/smallNav.js"></script>
+    <script type="text/javascript">
+        function fun() {
+            alert("Submitted");
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+
+        <div class="logo-title">
+          BRACELETIQUE
+        </div>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <div id="dropdown">
+          <li><a href="" class="dropbutton">PRODUCT</a></li>
+            <div id="dropdowncontent">
+              <a href="bracelet.html">Bracelet</a>
+              <a href="necklace.html">Necklace</a>
+              <a href="newcollection.html">New Collection</a>
+              <a href="onlineEx.html">Onilne Exclusive</a>
+            </div>
+          </div>
+          <li><a href="aboutUs.html">ABOUT US</a></li>
+          <li><a href="FAQs.html">FAQ</a></li>
+         
+        </ul>
+        
+         <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+      </nav>
+
+
+    <div class="details">
+
+        <form action="index.html" method="get">
+
+            
+                <center>
+                    <h1>Feedback</h1>
+                </center>
+                <form>
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" class="input" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" class="input" name="lastname" placeholder="Your last name..">
+
+
+                    <form autocomplete="off">
+                        <div class="autocomplete" style="width: 100%;">
+                            <label>Country</label>
+                            <input id="myInput" type="text" class="input" name="myCountry" placeholder="Country">
+                        </div>
+                    </form>
+
+
+
+                    <label for="birthday" ;">Birthday:</label>
+                    <input type="date" id="birthday" class="input" name="birthday" style="width: 100%;">
+
+                    <div class="phoneNumber">
+
+                        <label for="phone">Phone&nbspNumber:</label>
+                        <input type="tel" id="phone" class="input" name="phone" placeholder="012-4567890"
+                            pattern="[0-9]{3}-[0-9]{7}" required style="width:100%">
+                        <label id="email">Email:</label>
+                        <input type="email" id="email" class="input" name="email" placeholder="Enter your email"
+                            style="width:100%">
+                    </div>
+
+                    <table>
+                        <tr>
+                            <th> </th>
+                            <th class="fair">FAIR</th>
+                            <th class="poor">POOR</th>
+                            <th>VERY POOR</th>
+                            <th class="good">GOOD</th>
+                            <th>VERY GOOD</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1% 2%;">How would you rate your overall customer experience?</td>
+                            <td>
+                                <center><label class="container">
+                                        <input type="radio" checked="checked" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label></center>
+                            </td>
+                            <td>
+                                <center><label class="container">
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label></center>
+                            </td>
+                            <td>
+                                <center><label class="container">
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label></center>
+                            </td>
+                            <td>
+                                <center><label class="container">
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label></center>
+                            </td>
+                            <td>
+                                <center><label class="container">
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label></center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1% 2%;">How satisfied were you with the product?</td>
+                            <td>
+                                <center><label class="container">
+                                        <input type="radio" checked="checked" name="radio2">
+                                        <span class="checkmark"></span>
+                                    </label></center>
+                            </td>
+                            <td>
+                                <center><label class="container">
+                                        <input type="radio" name="radio2">
+                                        <span class="checkmark"></span>
+                                    </label></center>
+                            </td>
+                            <td>
+                                <center><label class="container">
+                                        <input type="radio" name="radio2">
+                                        <span class="checkmark"></span>
+                                    </label></center>
+                            </td>
+                            <td>
+                                <center><label class="container">
+                                        <input type="radio" name="radio2">
+                                        <span class="checkmark"></span>
+                                    </label></center>
+                            </td>
+                            <td>
+                                <center><label class="container">
+                                        <input type="radio" name="radio2">
+                                        <span class="checkmark"></span>
+                                    </label></center>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td style="padding: 1% 2%;">How satisfied were you with the timeliness of delivery?</td>
+                            <td>
+                                 <center><label class="container">
+                                    <input type="radio" checked="checked" name="radio3">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </center>  
+                          
+                            </td>
+                            
+                            <td>
+                              
+
+                                 <center><label class="container">
+                                        <input type="radio" name="radio3">
+                                        <span class="checkmark"></span>
+                                    </label></center> 
+                            </td>
+                            
+                            <td>
+                               
+                                 <center><label class="container">
+                                        <input type="radio" name="radio3">
+                                        <span class="checkmark"></span>
+                                    </label></center> 
+                            </td>
+                            
+                            <td>
+                               
+                                 <center><label class="container">
+                                        <input type="radio" name="radio3">
+                                        <span class="checkmark"></span>
+                                    </label></center> 
+                            </td>
+                            
+                            <td>
+                               
+                                <center><label class="container">
+                                        <input type="radio" name="radio3">
+                                        <span class="checkmark"></span>
+                                    </label></center> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1% 2%;">How satisfied were you with the customer support?</td>
+                            <td>
+                                <center><label class="container">
+                                        <input type="radio" name="radio4" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label></center>
+                            </td>
+                            <td>
+                                <center><label class="container">
+                                        <input type="radio" name="radio4">
+                                        <span class="checkmark"></span>
+                                    </label></center>
+                            </td>
+                            <td>
+                                <center><label class="container">
+                                        <input type="radio" name="radio4">
+                                        <span class="checkmark"></span>
+                                    </label></center>
+                            </td>
+                            <td>
+                                <center><label class="container">
+                                        <input type="radio" name="radio4">
+                                        <span class="checkmark"></span>
+                                    </label></center>
+                            </td>
+                            <td>
+                                <center><label class="container">
+                                        <input type="radio" name="radio4">
+                                        <span class="checkmark"></span>
+                                    </label></center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1% 2%;">Would you recommend our product or service to others?</td>
+                            <td>
+                                <center><label class="container">
+                                        <input type="radio" checked="checked" name="radio5">
+                                        <span class="checkmark"></span>
+                                    </label></center>
+                            </td>
+                            <td>
+                                <center><label class="container">
+                                        <input type="radio" name="radio5">
+                                        <span class="checkmark"></span>
+                                    </label></center>
+                            </td>
+                            <td>
+                                <center><label class="container">
+                                        <input type="radio" name="radio5">
+                                        <span class="checkmark"></span>
+                                    </label></center>
+                            </td>
+                            <td>
+                                <center><label class="container">
+                                        <input type="radio" name="radio5">
+                                        <span class="checkmark"></span>
+                                    </label></center>
+                            </td>
+                            <td>
+                                <center><label class="container">
+                                        <input type="radio" name="radio5">
+                                        <span class="checkmark"></span>
+                                    </label></center>
+                            </td>
+                        </tr>
+                    </table>
+                    <label>
+                        <input type="text" name="review" placeholder="Tell us how we can improve">
+                    </label>
+
+
+                    <!-- <a href="feedback.html">  -->
+
+
+
+
+                    <center><button>Submit</button></center>
+
+                </form>
+        </form>
+         <!-- </a>   -->
+    </div>
+
+    <!---------------Footer---------->
+    <hr>
+ <div class="footer">
+    <div class="navbar" id="myNavbar">
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li> <a href="jewelrycare.html">Jewelry Care</a></li> 
+      <li><a href="aboutus.html">About Us</a></li>
+      <li> <a href="feedback.html">Feedback</a></li>    
+      </ul>
+    </div> 
+    
+    <div class="navbar2" id="myNavbar2">
+          <b>Customer Services</b><br><br>
+          Need help?<br>
+          Send us an e-mail to:<br> 
+          customercare@braceletique.com<br>
+          For quick customer service give us a call on:<br>
+          (+60) 111 604 471
+      
+    </div>
+    <div class="footer-col-4 ">
+      <h4>Follow us</h4><br>
+      <div class="social-links">
+          <a href="https://www.facebook.com/SWAROVSKI.global/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/swarovski"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/swarovski/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@Swarovski"><i class="fab fa-youtube"></i></a>
+      </div>
+  </div>
+    
+  </div>
+  <hr>
+  <p class="copyright "><i class="far fa-copyright "></i> 2023 BRACELETIQUE. All Rights Reserved</p>
+  <!-- footer -->
+  
+
+
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --main-color: #F2EFE9;
+    --main-font : clamp(.8rem, 5vw, 1.5rem);
+    --second-font : clamp(.5rem, 2vw, 1.2rem);
+    --third-font : clamp(.5rem, 2vw, 1rem);
+    --title-font : clamp(.5rem, 2.5vw, 1.5rem);
+
+}
+
+.model{
+    margin: auto;
+    background-color:#f5f1ea;
+    padding: 10% 15% 10%;
+}
+
+.container{
+    background-color: white;
+    padding: 6%;
+    text-align: center;
+    position: relative;
+}
+
+.container h2{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: clamp(1.5rem, 2.5vw, 4rem);
+}
+#subtitle{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 3%;
+}
+.container h4{
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+    font-size: clamp(1.1rem, 1.9vw, 3rem);
+    padding: 0 10%;
+}
+
+.container #details{
+    text-align: left;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.8px;
+    line-height: 30px;
+    font-size: clamp(0.7rem, 1.2vw, 2rem);
+    padding:1% 15%;
+}
+
+.user{
+    border: 1px solid black;
+    width: clamp(10px, 50vw ,450px);
+    height: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+    font-size: clamp(0.8rem, 1.2vw, 2rem);
+}
+
+.newsletter , p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(0.7rem, 1.2vw, 2rem);
+    letter-spacing: 1px;
+    text-align: left;
+    padding: 0 13.5%;
+}
+
+#cb1{
+    accent-color: grey;
+}
+
+#TnC, #Keep{
+    padding: 0 13.5%;
+}
+
+#content{
+    margin: 0 9%;
+    padding-left: 10px;
+    padding-right: 20px;
+    position: relative;
+}
+
+#togglePassword{
+    position:absolute;
+    top: 22%;
+    right: 1%;
+    left: 60%;
+    padding: 1% 2%;
+}
+
+#togglePassword1{
+    position:absolute;
+    top: 27%;
+    right: 1%;
+    left: 60%;
+    padding: 1% 2%;
+}
+
+#display1, #display2{
+    font-size: clamp(0.7rem, 1.1vw, 2rem);
+    text-align: left;
+}
+
+.signupbtn{
+    width: clamp(10px, 50vw ,450px);
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+}
+
+.signupbtn:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .3
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+#last{
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+#last a{
+    color:#717171;
+}
+input.user:focus:valid{
+   background: rgb(237, 251, 237);
+}
+
+input.user:focus:invalid{
+   background: rgb(251, 236, 236);
+}
+
+#bottom{
+    color: #717171;
+}
+
+#sub{
+    padding: 0 6.5%;
+}

@@ -1,0 +1,249 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --main-color: #F2EFE9;
+    --main-font : clamp(.8rem, 5vw, 1.5rem);
+    --second-font : clamp(.5rem, 2vw, 1.2rem);
+    --third-font : clamp(.5rem, 2vw, 1rem);
+    --title-font : clamp(.5rem, 2.5vw, 1.5rem);
+
+}
+body{
+    background-color: var(--main-color);
+}
+section.container{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: calc(2rem + 3%) ;
+   
+
+}
+
+section.container .title{
+    font-size: var(--title-font);
+    margin-top: calc(1rem + 2%);
+}
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--white);
+    width: 70%;
+    margin-top: 3%;
+    padding: 2% 4%;
+    
+}
+.cart-product > h3{
+    font-size: var(--second-font);
+    font-weight: 600;
+    padding: 5%;
+}
+
+.cart-product > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 50%;
+    border: 1px solid var(--black);
+    background-color: var(--white);
+    padding: 1.5% 3%;
+    margin-bottom: 3%;
+   
+    transition: .4s ease;
+}
+.cart-product > a button{
+    cursor: pointer;
+    background-color: var(--white);
+    border: none; 
+    font-size: var(--second-font);
+    font-weight: 600;
+    transition: .4s ease;
+}
+.cart-product > a:hover, .cart-product > a:hover button{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+
+
+
+/* addtocart css */
+/* for cart item  */
+
+.cart-items{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 3%;
+    width: 100%;
+    height: 100%;
+}
+
+.cart-item{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+    background-color: var(--white);
+    padding: 2%;
+    margin-bottom: 3%; 
+   
+}
+
+
+.delete-button{
+    width: 50%;
+    background-color: var(--black);
+    color: var(--white);
+    border: 1px solid;
+    padding: .5rem;
+
+   
+
+}
+.cart-item-image{
+    display: flex;
+    align-items: center;
+    
+   flex: .4;
+    height: 100%;
+    
+}
+.cart-item-image img{
+    width: 100%;
+    height: 100%;
+   
+   object-fit: cover;
+}
+
+.cart-item .cart-item-details{
+    
+    height: 100%;
+    flex: .6;
+    display: flex;
+    padding: 4% 2%;
+    flex-direction: column;
+    
+    
+  
+    
+   
+}
+.cart-item-details .info-cart h5{
+    margin-top: 3%;
+   
+    
+}
+
+.cart-item-details .delete-number{
+    margin-top: 40%;
+    
+
+}
+/* delete button row */
+.delete-number{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.delete-number .delete-button{
+    cursor: pointer;
+}
+
+/* plus and minus number of product */
+.cart-item-details .minus_plus{
+    display: flex;
+    align-items: center;
+}
+.cart-item-details .minus_plus h5{
+    margin: 0 .5rem;
+}
+.cart-item-details .minus_plus button{
+    cursor: pointer;
+    background-color: var(--black);
+    padding: .2rem .4rem;
+    border: 1px solid var(--black);
+    border-radius: 50%;
+    font-size: var(--second-font);
+    color: var(--white);
+}
+
+/* product and summary */
+.cart-total{
+    display: flex;
+   
+    padding: 5%;
+}
+
+
+.summary{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 100%;
+    background-color: var(--white);
+    padding: 2%;
+
+}
+.summary .calculation{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.summary .subtotal{
+    display: flex;
+    margin-top: 1rem;
+    
+    
+   
+}
+.summary .subtotal h5:first-child, 
+.summary .shipping h5:first-child, 
+.summary .total h5:first-child {
+    flex: 1;
+}
+.summary .shipping{
+    display: flex;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+}
+
+
+.summary .total{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.summary .checkout-button{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    color: var(--white);
+    border: 1px solid;
+    padding: .5rem;
+    margin-top: 1rem;
+    font-weight: 600;
+    transition: .4s ease;
+    
+}
+.summary .checkout-button:hover{
+    
+    background-color: var(--white);
+    color: var(--black);
+    
+}
+@media (max-width:700px){
+    .cart-total{
+        flex-direction: column;
+    }
+
+    .summary{
+        width: 90vw;
+    }
+}

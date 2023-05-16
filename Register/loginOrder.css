@@ -1,0 +1,61 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --main-color: #F2EFE9;
+
+}
+  
+  /* status gl */
+  /* !!!!!!!!!!! */
+  section.flowBox{
+    margin: calc( 6rem + 5%) auto 0 ;
+    display: flex;
+    width: 60%;
+    align-items: center;
+    
+    justify-content: center;
+  }
+  
+  .flowOrder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 15%;
+    /* background-color: aquamarine; */
+  }
+  
+  .flowOrder .status{
+    background-color: black;
+    color: white;
+    padding: .5rem .8rem;
+    border-radius: 50%;
+    margin-bottom: .5rem;
+  }
+  .flowOrder:nth-child(3) .status,
+  .flowOrder:nth-child(5) .status,
+  .flowOrder:nth-child(7) .status {
+      background-color: var(--main-color);
+      color: black;
+      border: 1px solid;
+  }
+  
+  
+  .line{
+    
+    width: 100%;
+    
+  }
+  /* !!!!!!!!! */
+
+
+
+
+
+
+
+
+
+  body{
+    background-color: var(--main-color);
+  }
